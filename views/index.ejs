@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Pembayaran Spp</title>
+  <style>
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: url(../IMG/wallpaper.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ background-color: aqua;
+}
+#one-page{
+    height: 100%;
+    background-image: url("/assets/IMG/wallpaper.jpg");
+    background-size: auto;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto ;
+
+}
+.container{
+    position: relative;
+    top: 15%;
+}
+h1{
+    font-size: 50px;
+    color: black;
+}
+
+@media (max-width: 976px){
+    #one-page{
+        height: 150%;
+        background-image: url("/assets/IMG/wallpaper.jpg");
+        background-size: auto;
+        -webkit-background-size: auto;
+        -moz-background-size: auto;
+        -o-background-size: auto ;
+    }
+}
+.text-light{
+    color: black;
+}
+</style>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doucmentasi</title>
+    <!--Zona Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Zona JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- Zona CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/ngambil_data.css">
+    <link rel="stylesheet" href="assets/CSS/table_spp.css">
+    <!-- Zona Java Script -->
+    <script src="assets/JS/mainspp.js"></script>
+</head>
+
+<body>
+    <section id="one-page">
+        <div class="container">
+            <!-- Title -->
+            <div class="row">
+                <h1 class="text-light">Pembayaran SPP SMK JAKARTA PUSAT 1</h1>
+            </div>
+
+            <div class="row mt-4">
+                <!-- insertion section -->
+                <div class="col-lg-5" id="insertion_section">
+                    <form class="form-group justify-content-center">
+                        <div class="row" id="name-section">
+                            <label for="bookName" class="text-light">Nama</label>
+                            <input type="text" class="form-control" id="bookName">
+                        </div>
+                        <div class="row" id="author-section">
+                            <label for="authorName" class="text-light">Kelas</label>
+                            <input type="text" class="form-control" id="authorName">
+                        </div>
+                                                <div class="row" id="author-section">
+                            <label for="authorName" class="text-light">Jurusan</label>
+                            <input type="text" class="form-control" id="authorName">
+                        </div>
+                        <div class="row" id="publisher-section">
+                            <label for="publisherName" class="text-light">Pembayaran SPP</label>
+                            <input type="number" class="form-control" id="publisherName">
+                        </div>
+                        <div class="row" id="two-section">
+                            <div class="col-6">
+                                <label for="numberPage" class="text-light">TGL.Bayar</label>
+                                <input type="date" class="form-control" id="numberPage">
+                            </div>
+                            <div class="col-6">
+                                <label for="serialNumber" class="text-light">TOTAL</label>
+                                <input type="number" class="form-control" id="serialNumber">
+                            </div>
+                        </div>
+                        <div class="add-button mt-4">
+                            <button type="button" class="btn btn-danger btn-block" id="add">TAMBAHKAN MURID</button>
+                        </div>
+                        </from>
+                </div>
+
+                <!-- Book List -->
+                <div class="col-lg-7" id="book_list">
+                    <table class="table table-borderless table-striped mt-3 ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Kelas</th>
+                                <th scope="col">Jurusan</th>
+                                <th scope="col">Pembayaran SPP</th>
+                                <th scope="col">TGL.Bayar</th>
+                                <th scope="col">TOTAL</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabs">
+                            <tr class="tab">
+                            </tr>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+      </body>
+
+</html>
